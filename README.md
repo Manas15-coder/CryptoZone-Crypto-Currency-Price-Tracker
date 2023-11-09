@@ -1,4 +1,6 @@
-# Getting Started with Create React App
+# CryptoZone: Crypto Currency Price Tracker
+
+<img src="https://i.postimg.cc/KYxctQx8/Screenshot-2023-11-09-204545.png"/>
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
