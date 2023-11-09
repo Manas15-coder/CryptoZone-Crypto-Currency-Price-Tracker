@@ -1,0 +1,154 @@
+/* Sidebar Styles */
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: -250px;
+    /* Start off-screen */
+    width: 250px;
+    height: 100%;
+    background-color: #6e07f3;
+    transition: left 0.3s ease-in-out;
+  }
+  
+  .sidebar.open {
+    left: 0;
+    /* Slide in when open */
+  }
+  
+  .sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .sidebar ul li {
+    margin: 15px 0;
+  }
+  
+  .sidebar ul li:hover {
+    padding: 10px 20px;
+    /* From https://css.glass */
+    background: rgba(255, 255, 255, 0.2);
+    width: 100%;
+    transition: 0.3s ease-in-out;
+  }
+  
+  .sidebar a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+  }
+  
+  
+  .navbar {
+    top: 0;
+    position: sticky;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    color: #ffff;
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .navbar-brand a {
+    color: #ffff;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  
+  .navbar-links a {
+    padding: 1rem;
+    color: #ffff;
+    text-decoration: none;
+  }
+  
+  .navbar-links a:hover {
+    color: #6e07f3;
+  }
+  
+  ul li:hover {
+    color: #6e07f3;
+  }
+  
+  .navbar-links a i {
+    color: #6e07f3;
+    padding: 1rem;
+  }
+  
+  
+  .sidebar-toggle-1 {
+    background: transparent;
+    padding: 5px 10px;
+    border: 2px dashed #ffff;
+    color: #ffff;
+    cursor: pointer;
+    display: none;
+  }
+  
+  .sidebar-toggle-2 {
+    background: transparent;
+    padding: 5px 10px;
+    border: 2px dashed black;
+    color: black;
+    cursor: pointer;
+    display: none;
+    margin-top: 5%;
+    margin-left: 90%;
+  }
+  
+  .mobile-nav {
+    z-index: 1;
+    background-color: hsl(0, 0%, 100%);
+    color: black;
+    top: 0;
+    position: fixed;
+    width: 100%;
+    left: -100%;
+    height: 100vh;
+    transition: left 0.3s ease-in-out;
+  }
+  
+  .mobile-nav.open {
+    left: 0;
+  }
+  
+  @media only screen and (max-width: 769px) {
+  
+    .sidebar-toggle-1,
+    .sidebar-toggle-2 {
+      display: block;
+    }
+  
+    .navbar-links {
+      display: none;
+    }
+  }
+  
+  .mobile-nav ul li {
+    padding: 1rem;
+    text-decoration: none;
+    list-style-type: none;
+  }
+  
+  .mobile-nav ul {
+    margin-left: 30%;
+    margin-top: 40%;
+    padding: 1rem;
+  }
+  
+  .mobile-nav ul li a {
+    align-items: center;
+    text-align: center;
+    font-size: 2rem;
+    text-decoration: none;
+    list-style: none;
+    color: black;
+    font-weight: bold;
+  }
